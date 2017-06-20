@@ -1,11 +1,14 @@
 # FilmPalette
 
+##This project is for the Urban Outfitters Code Challenge.  Film Palette is an app that allows a user to search for movies by title and to find the color palette for the movie's poster. Built with React, Webpack, and Express. On the initial load the user is prompted to enter a movie title. Once a title is submitted an request is made to the OMBD API. When the response is received the movie's poster and meta data are rendered and second request is made to the ColorTag API to process the image. The ColorTag API then response with json data containing up to 20 color objects with HEX and named labels. This was great challenge and I learned a lot about pure React and XMLHTTPRequests. Some issues I ran into were with preflight options reponses and dealing with a spotty API (ColorTag is a bit finicky)
+
+
 
 ## Installation
 
 **1. Clone the repo**
 
-    git clone https://github.com/omiologic/snowplow.git
+    git clone https://github.com/dkinsk/film-palette.git
 
 **2. Run install script**
 

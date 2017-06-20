@@ -19,7 +19,7 @@
   },
   "author": "Daniel Kang <dkinsk@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/omiologic/snowplow#readme",
+  "homepage": "https://github.com/dkinsk/film-palette#readme",
   "dependencies": {
     "axios": "^0.16.2",
     "babel-preset-stage-2": "^6.18.0",
