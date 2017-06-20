@@ -1,0 +1,40 @@
+
+
+
+.movie-container {
+	display: flex;
+	margin-top: 1em;
+	margin-left: 1%;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.poster-container {
+  padding: 5px;
+  box-shadow: none;
+  transition: box-shadow 1s;
+  border: solid 1px #EFEFEF;
+}
+
+.poster-container:hover  {
+  border: solid 1px #EFEFEF;
+  -moz-box-shadow: -5px 8px 20px #999;
+  -webkit-box-shadow: -5px 8px 20px #999;
+  box-shadow: -5px 8px 20px #999;
+}
+
+Img {
+	width: 400px;
+}
+
+.initial-greeting {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 3vw;
+}
+
+.movie-content {
+	width: 500px;
+	margin: auto auto;
+	font-family: 'Source Sans Pro', sans-serif;
+	
+}

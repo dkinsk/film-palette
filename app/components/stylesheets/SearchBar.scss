@@ -1,0 +1,40 @@
+.search {
+	width: 100%;
+	position: relative;
+}
+
+.search-term {
+  float: left;
+  width: 100%;
+  border: 3px solid #355C96;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #355C96;
+  font-size: 15px;
+}
+
+.search-term:focus{
+  color: #080808;
+}
+
+.search-button {
+  position: absolute;  
+  right: -50px;
+  width: 45px;
+  height: 36px;
+  border: 1px solid #355C96;
+  background: #355C96;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.search-container {
+  width: 80%;
+  margin-top: 1%;
+  margin-left: 1%;
+}
