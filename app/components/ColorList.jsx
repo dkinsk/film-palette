@@ -11,7 +11,6 @@ export default class ColorsList extends Component {
 
 	componentWillReceiveProps(nextProps) {
 		const colorsBaseURL = 'https://apicloud-colortag.p.mashape.com/tag-url.json?palette=w3c&sort=relevance&url=';
-		// const mashape = '&mashape-key=x8hDPnhLoGmsh5aNnoN6g15WcAGrp1TtyOJjsnz5IOqO2cacCe';
 		// Im aware I need to keep my keys private but wanted to let the reviewers run the code
 		// without getting their own keys
 		const mashape2 = '&mashape-key=74W40eBvfSmshhKHdQqzDjYKsvt6p1k8w8YjsnNzh5H08BQRbq';
