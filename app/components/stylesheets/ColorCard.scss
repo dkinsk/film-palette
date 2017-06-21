@@ -2,15 +2,27 @@
 	position: relative;
 	width: 200px;
 	height: 200px;
-	margin: 1em 0;
+	margin: 1vw;
+	flex: 1 0 15%;
+		@include respond-to(handhelds) {
+	    width: 98%;
+	    height: 30vw;
+	  }
+	  @include respond-to(handhelds-landscape) {
+	    flex: 1 0 25%
+	  }
 	
 	.label {
-		height: 30%;
+		font-family: 'Source Sans Pro', sans-serif;
 		padding: 10px;
 		text-align: center;
 		text-shadow: 0 1px 1px #cfd8dc;
 		display: none;
+			@include respond-to(handhelds) {
+    	font-size: 4vw;
+  	}
 	}
+	
 	&:hover, &:focus {
 		.label {
 			display: block;

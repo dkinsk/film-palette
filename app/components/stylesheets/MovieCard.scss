@@ -1,10 +1,8 @@
-
-
+@import 'Media.scss'; 
 
 .movie-container {
 	display: flex;
 	margin-top: 1em;
-	margin-left: 1%;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -14,6 +12,10 @@
   box-shadow: none;
   transition: box-shadow 1s;
   border: solid 1px #EFEFEF;
+  margin-left: 4vw;
+		@include respond-to(handhelds) {
+			margin-left: -3vw;
+		}
 }
 
 .poster-container:hover  {
@@ -25,16 +27,34 @@
 
 Img {
 	width: 400px;
+		@include respond-to(handhelds) {
+	    width: 90vw;
+	    height: 60vh;
+	    margin: none;
+	  }
 }
 
 .initial-greeting {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 3vw;
+	margin-left: 1vw;
 }
 
 .movie-content {
+	font-family: 'Source Sans Pro', sans-serif;
 	width: 500px;
 	margin: auto auto;
 	font-family: 'Source Sans Pro', sans-serif;
-	
+		@include respond-to(handhelds) {
+		  font-size: 4vw; 
+		}
+
+		@include respond-to(tablets) {
+		  font-size: 4vw;
+		  margin-left: 4vw;
+		}
+
+		@include respond-to(wide) {
+		  font-size: 2vw;
+		}
 }

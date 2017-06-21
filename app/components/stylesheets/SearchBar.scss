@@ -1,9 +1,12 @@
+@import 'Media.scss'; 
+
 .search {
 	width: 100%;
 	position: relative;
 }
 
 .search-term {
+  font-family: 'Source Sans Pro', sans-serif;
   float: left;
   width: 100%;
   border: 3px solid #355C96;
@@ -13,6 +16,9 @@
   outline: none;
   color: #355C96;
   font-size: 15px;
+    @include respond-to(handhelds) {
+      width: 90%;
+    }
 }
 
 .search-term:focus{
@@ -31,6 +37,9 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 20px;
+    @include respond-to(handhelds) {
+      right: 0px;
+    }
 }
 
 .search-container {

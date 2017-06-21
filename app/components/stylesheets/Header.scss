@@ -1,6 +1,11 @@
+@import 'Media.scss'; 
+
 
 .header {
 	font-family: Bungee Shade;
 	font-size: 10vw;
 	color: #E50914;
+		@include respond-to(handhelds) {
+	  	margin-left: -3vw;
+	  }
 }

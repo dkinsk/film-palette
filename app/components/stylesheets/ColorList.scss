@@ -1,12 +1,12 @@
+@import 'Media.scss'; 
+
 .grid-container {
-	width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin: 80px auto 50px;
+	margin: 50px 10px 20px -10px;
+		@include respond-to(handhelds) {
+	    flex-direction: column;
+	  }
 }
 
-.grid-container div {
-	margin: 10px;
-	flex: 1 0 15%
-}	
