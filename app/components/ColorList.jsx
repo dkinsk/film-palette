@@ -12,29 +12,33 @@ export default class ColorsList extends Component {
 	componentWillReceiveProps(nextProps) {
 		const colorsBaseURL = 'https://apicloud-colortag.p.mashape.com/tag-url.json?palette=w3c&sort=relevance&url=';
 		// const mashape = '&mashape-key=x8hDPnhLoGmsh5aNnoN6g15WcAGrp1TtyOJjsnz5IOqO2cacCe';
+		// Im aware I need to keep my keys private but wanted to let the reviewers run the code
+		// without getting their own keys
 		const mashape2 = '&mashape-key=74W40eBvfSmshhKHdQqzDjYKsvt6p1k8w8YjsnNzh5H08BQRbq';
 
 		const requestURL = `${colorsBaseURL}${nextProps.movie.Poster}${mashape2}`;
 
 		const component = this;
 
-		fetch(requestURL).then(response => {
-			const contentType = response.headers.get('content-type');
+		this.props.error
+			? null
+			: fetch(requestURL).then(response => {
+					const contentType = response.headers.get('content-type');
 
-			if (contentType && contentType.indexOf('application/json') !== -1) {
-				return response
-					.json()
-					.then(json => {
-						let palette = json;
-						component.setState({ colors: [...palette.tags] });
-					})
-					.catch(err => {
-						console.log('request failed', err);
-					});
-			} else {
-				console.log('empty response');
-			}
-		});
+					if (contentType && contentType.indexOf('application/json') !== -1) {
+						return response
+							.json()
+							.then(json => {
+								let palette = json;
+								component.setState({ colors: [...palette.tags] });
+							})
+							.catch(err => {
+								console.log('request failed', err);
+							});
+					} else {
+						console.log('empty response');
+					}
+				});
 	}
 
 	render() {
