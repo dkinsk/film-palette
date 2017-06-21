@@ -29,6 +29,12 @@ Run `npm run build-dev` for quicker compile and live reload for development purp
 
 ## Main Technologies Used
 
+## API
+
+* http://apicloud.me/apis/colortag/docs/
+
+* http://www.omdbapi.com/
+
 ### Backend
 * [Express](http://expressjs.com) Express JavaScript Server-Side Framework
 
