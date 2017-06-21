@@ -4,11 +4,19 @@ import Img from 'react-image';
 
 const MovieCard = props => {
 	//default greeting for the initial render/load
-	if (props.movie.Title === undefined) {
+	if (props.movie.Title === undefined && !props.error) {
 		return (
 			<div className="initial-greeting">
 				<h2>Welcome to Film Palette!</h2>
 				<p>Enter a film title to get its details and a color palette for its poster!</p>
+			</div>
+		);
+	}
+	//error message
+	if (props.error) {
+		return (
+			<div className="initial-greeting">
+				<h2>{props.error}</h2>
 			</div>
 		);
 	}
