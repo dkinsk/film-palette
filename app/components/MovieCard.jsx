@@ -15,7 +15,7 @@ const MovieCard = props => {
 	//error message
 	if (props.error) {
 		return (
-			<div className="initial-greeting">
+			<div className="error-message">
 				<h2>{props.error}</h2>
 			</div>
 		);

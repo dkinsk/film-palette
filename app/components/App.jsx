@@ -18,6 +18,7 @@ export default class App extends Component {
 		const formattedTitle = encodeURIComponent(title.trim());
 		const movieBaseURL = 'http://www.omdbapi.com/?apikey=25d47177&t=';
 		const requestURL = `${movieBaseURL}${formattedTitle}`;
+		this.setState({ movie: {} });
 
 		//added a check for incorrect searches
 		fetch(requestURL).then(response => response.json()).then(json => {
