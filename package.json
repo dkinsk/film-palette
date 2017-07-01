@@ -15,7 +15,8 @@
     "build-watch": "npm run build -- -w",
     "build-dev": "cross-env NODE_ENV=development npm run build-watch",
     "lint": "esw . --ignore-path .gitignore --ext '.js,.jsx'",
-    "lint-watch": "npm run lint -- -w"
+    "lint-watch": "npm run lint -- -w",
+    "test": "jest"
   },
   "author": "Daniel Kang <dkinsk@gmail.com>",
   "license": "ISC",
@@ -54,6 +55,7 @@
     "cross-env": "^3.1.4",
     "css-loader": "^0.28.4",
     "dateformat": "^2.0.0",
+    "enzyme-to-json": "^1.5.1",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.2.0",
@@ -63,8 +65,10 @@
     "eslint-plugin-standard": "^3.0.1",
     "eslint-watch": "^3.1.0",
     "husky": "^0.13.3",
+    "jest": "^20.0.4",
     "mocha": "^3.1.2",
     "nodemon": "^1.11.0",
+    "react-test-renderer": "^15.6.1",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.1",
     "volleyball": "^1.4.1",
